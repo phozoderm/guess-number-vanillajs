@@ -23,7 +23,6 @@ document.querySelector('.check').addEventListener('click', function () {
             displayMessage('You won!')
             document.querySelector('.number').textContent = secretNumber
             document.querySelector('body').style.backgroundColor = 'green'
-            //todo highscore a esitlemis biz score a esitledik fark ne? ayrica toString yapmiyor adam
             if (score > highScore) {
                 highScore = score
                 document.querySelector('.highScore').textContent = score.toString()
