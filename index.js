@@ -1,6 +1,6 @@
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 100) + 1;
 console.log(secretNumber)
-let score = 20;
+let score = 7;
 let highScore = 0;
 // let isGameOver = false;
 
@@ -64,10 +64,10 @@ document.querySelector('.check').addEventListener('click', function () {
 
 // again
 document.querySelector('.again').addEventListener('click', function () {
-    score = 20;
+    score = 7;
     document.querySelector('.score').textContent = score.toString();
     document.querySelector('.message').textContent = 'Start guessing...';
-    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    secretNumber = Math.trunc(Math.random() * 100) + 1;
     document.querySelector('.guess').value = '';
     document.querySelector('.number').textContent = '?';
     document.querySelector('body').style.backgroundColor = '#222';
